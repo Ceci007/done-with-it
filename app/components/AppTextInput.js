@@ -9,7 +9,7 @@ function AppTextInput({ icon, ...otherProps }) {
     <View style={styles.container}>
       {icon && <MaterialCommunityIcons name={icon} 
         size={25} color={colors.grey} style={styles.icon} />}
-      <TextInput style={styles.textInput} {...otherProps} />
+      <TextInput style={styles.textInput} placeholderTextColor={colors.grey} {...otherProps} />
     </View>
   );
 }
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   },
   textInput: {
     fontSize: 18,
-    color: colors.darkGrey,
+    color: colors.grey,
   }, 
 })
 
