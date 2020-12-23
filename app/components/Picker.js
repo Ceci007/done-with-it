@@ -3,17 +3,26 @@ import { Text, View, TouchableWithoutFeedback, Modal, FlatList, StyleSheet } fro
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import colors from '../config/colors';
-import AppButton from './AppButton';
+import AppButton from './Button';
 import Screen from './Screen';
 import PickerItem from './PickerItem';
 
-function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem, ...otherProps }) {
+function AppPicker({ 
+  icon, 
+  items,
+  numberOfColumns = 1, 
+  onSelectItem, 
+  PickerItemComponent = PickerItem, 
+  placeholder, 
+  selectedItem, 
+  width = '100%', 
+  ...otherProps }) {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <React.Fragment>
       <TouchableWithoutFeedback onPress={() => setModalVisible(true)}>
-        <View style={styles.container}>
+        <View style={[styles.container, { width }]}>
           {icon && <MaterialCommunityIcons name={icon} 
             size={25} color={colors.grey} style={styles.icon} />}
           {selectedItem ? <Text style={styles.text}>{selectedItem.label}</Text> :
@@ -28,8 +37,10 @@ function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem, ...ot
           <FlatList 
             data={items}
             keyExtractor={item => item.value.toString()}
+            numColumns={numberOfColumns}
             renderItem = {({ item }) => 
-              <PickerItem 
+              <PickerItemComponent 
+                item={item}
                 label={item.label}
                 onPress={() => {
                   setModalVisible(false);
@@ -46,14 +57,12 @@ function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem, ...ot
 const styles = StyleSheet.create({
   button: {
     marginHorizontal: 15,
-    borderRadius: 0,
     width: '60%',
   },
   container: {
     backgroundColor: colors.lightGrey,
     borderRadius: 25,
     flexDirection: 'row',
-    width: '100%',
     padding: 15,
     marginVertical: 10,
   },
@@ -68,7 +77,6 @@ const styles = StyleSheet.create({
   text: {
     flex: 1,
     fontSize: 18,
-    //color: colors.grey,
   },
   textInput: {
     fontSize: 18,
