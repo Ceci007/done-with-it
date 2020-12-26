@@ -4,7 +4,6 @@ const endpoint = "/listings";
 
 const getListings = () => client.get(endpoint);
 
-/*
 export const addListing = (listing, onUploadProgress) => {
   const data = new FormData();
   data.append("title", listing.title);
@@ -27,9 +26,9 @@ export const addListing = (listing, onUploadProgress) => {
     onUploadProgress: (progress) =>
       onUploadProgress(progress.loaded / progress.total),
   });
-}; */
+};
 
 export default {
-  /*addListing,*/
+  addListing,
   getListings,
 };
