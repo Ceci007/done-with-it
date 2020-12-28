@@ -8,10 +8,10 @@ import OfflineNotice from "./app/components/OfflineNotice";
 export default function App() {
   return (
     <>
-      <OfflineNotice />
       <NavigationContainer theme={navigationTheme}>
         <AppNavigator />
       </NavigationContainer>
+      <OfflineNotice />
     </>
   );
 }

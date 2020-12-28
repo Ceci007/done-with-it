@@ -10,9 +10,9 @@ function OfflineNotice(props) {
 
   if (netInfo.type !== "unknown" && netInfo.isInternetReachable === false)
     return (
-      <View style={styles.container}>
-        <Text style={styles.text}>No Internet Connection</Text>
-      </View>
+        <View style={styles.container}>
+          <Text style={styles.text}>No Internet Connection</Text>
+        </View>
     );
 
   return null;
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: Constants.statusBarHeight,
     width: "100%",
-    zIndex: 1,
+    zIndex: 100,
   },
   text: {
     color: colors.white,
