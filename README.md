@@ -1,4 +1,4 @@
-# Book Library
+# Done With It (mobile app)
 
 #### Done With It is a market place to sell stuff you don't need anymore.
 
@@ -8,6 +8,7 @@
 - Get method implementation, display list of products
 - Fetch data from API
 - Animations
+- run in Android and IOS devices
 
 #### Livedemo
 - [staging channel](https://expo.io/@cecipeke/projects/DoneWithIt?release-channel=staging)
