@@ -20,7 +20,7 @@
 
 ## Getting started
 - once you have the backend running
-- run `npm install`;
+- run `npm install`
 - run `npm start`
 
 
