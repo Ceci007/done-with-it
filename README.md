@@ -2,11 +2,11 @@
 
 #### Done With It is a market place to sell stuff you don't need anymore.
 
-[app start](./screens/screen-1.jpeg) [login](./screens/screen-2.jpeg) [list](./screens/screen-3.jpeg)
+![app start](./screens/screen-1.jpeg) ![login](./screens/screen-2.jpeg) ![list](./screens/screen-3.jpeg)
 
-[account](./screens/screen-4.jpeg) [messages](./screens/screen-5.jpeg) [details](./screens/screen-6.jpeg)
+![account](./screens/screen-4.jpeg) ![messages](./screens/screen-5.jpeg) ![details](./screens/screen-6.jpeg)
 
-[add product](./screens/screen-7.jpeg)
+![add product](./screens/screen-7.jpeg)
 
 #### Features
 - basic authentication
