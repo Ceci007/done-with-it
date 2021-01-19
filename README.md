@@ -1,6 +1,7 @@
 # Done With It (mobile app)
 
-#### Done With It is a market place to sell stuff you don't need anymore.
+#### Done With It is a market place to help you sell stuff you don't need anymore.
+A React Native app to help you sell stuff you don't need anymore.
 
 ![app start](./screens/screen-1.jpeg)  ![login](./screens/screen-2.jpeg)  ![list](./screens/screen-3.jpeg)  ![account](./screens/screen-4.jpeg)  ![messages](./screens/screen-5.jpeg) 
 
