@@ -4,9 +4,7 @@
 A cross-platform app build with React Native.
 It can run in Android and IOS.
 
-![app start](./screens/screen-1.jpeg)  ![login](./screens/screen-2.jpeg)  ![list](./screens/screen-3.jpeg)  ![account](./screens/screen-4.jpeg)  ![messages](./screens/screen-5.jpeg) 
-
-![details](./screens/screen-6.jpeg)  ![add product](./screens/screen-7.jpeg)
+![app start](./screens/screen-1.jpeg)  ![login](./screens/screen-2.jpeg)  ![list](./screens/screen-3.jpeg)  ![account](./screens/screen-4.jpeg)  ![messages](./screens/screen-5.jpeg) ![details](./screens/screen-6.jpeg)  ![add product](./screens/screen-7.jpeg)
 
 #### Features
 - basic authentication
