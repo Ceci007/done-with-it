@@ -14,10 +14,6 @@ It can run in Android and IOS
 - Animations
 - run in Android and IOS devices
 
-#### Livedemo
-- [staging channel](https://expo.io/@cecipeke/projects/DoneWithIt?release-channel=staging)
-
-
 ## Getting started
 - once you have the backend running
 - run `npm install`
